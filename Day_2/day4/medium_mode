@@ -1,0 +1,68 @@
+#1
+
+def find_common_elements(l1, l2):
+    set1 = set(l1)
+    set2 = set(l2)
+    common_elements = list(set1.intersection(set2))
+    
+    return common_elements
+
+l1 = [1, 2, 3, 4, 5]
+l2 = [4, 5, 6, 7, 8]
+
+result = find_common_elements(l1, l2)
+print("Common elements:", result)
+
+#2 question
+
+def unique_elements(input_list):
+    return list(set(input_list))
+
+list1 = [1, 2, 2, 3, 4, 4, 5, 5]
+list2 = unique_elements(list1)
+print("list2 =", list2)
+
+#3
+
+def get_pairs_count(arr, n, k):
+    count = 0
+    for i in range (0, n):
+        for j in range (i + 1 , n):
+            if arr[i] + arr[j] == k:
+                count += 1
+    return count
+arr = [1, 2, 3, 4, 5]
+n = len(arr)
+k = 6
+print("count pairs = ", get_pairs_count(arr, n, k))
+
+#4
+
+def rotate_array(arr, D):
+    N = len(arr)
+    
+    D = D % N
+    rotated_part = arr[N - D:]
+    remaining_part = arr[:N - D]
+    rotated_arr = rotated_part + remaining_part
+    return rotated_arr
+arr = [1, 2, 3, 4, 5]
+D = 2
+rotated_arr = rotate_array(arr, D)
+
+print("arr after rotation =", rotated_arr)
+
+##5 question
+
+def analyze_weather_data(temperature_readings):
+    if not temperature_readings:
+        return "No temperature readings provided."
+
+    avg_temperature = sum(temperature_readings) / len(temperature_readings)
+    max_temperature = max(temperature_readings)
+    min_temperature = min(temperature_readings)
+
+    return f"Average Temperature: {avg_temperature}\nHighest Temperature: {max_temperature}\nLowest Temperature: {min_temperature}"
+temperature_readings = [25, 28, 21, 24, 27]
+print(analyze_weather_data(temperature_readings))
+

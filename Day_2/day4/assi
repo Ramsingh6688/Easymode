@@ -1,0 +1,189 @@
+#1 question
+
+# def divisibility(num):
+#     if num % 3 == 0 and num % 5 == 0:
+#         return "Brudite - Python Training"
+#     elif num % 3 == 0:
+#         return "Brudite"
+#     elif num % 5 == 0:
+#         return "Python Training"
+#     else:
+#         return str(num)
+
+
+# a = int(input("enter num: "))
+# for i in range (1, a ):
+#     print(divisibility(i))
+    
+#2 question
+
+# def no_letters_and_digits(input_string):
+#     num_letters = 0
+#     num_digits = 0
+    
+#     for char in input_string:
+#         if char.isalpha():
+#             num_letters += 1
+#         elif char.isdigit():
+#             num_digits += 1
+    
+#     return num_letters, num_digits
+
+# input_string = input("Enter a string: ")
+# num_letters, num_digits = no_letters_and_digits(input_string)
+# print("Alph ->", num_letters, "and number ->", num_digits)
+
+
+##3 question
+
+
+# physics = int(input("Enter Physics marks: "))
+# chemistry = int(input("Enter Chemistry marks: "))
+# biology = int(input("Enter Biology marks: "))
+# mathematics = int(input("Enter Mathematics marks: "))
+# computer = int(input("Enter Computer marks: "))
+
+
+# total_marks = physics + chemistry + biology + mathematics + computer
+# percentage = (total_marks / 500) * 100
+
+# if percentage >= 90:
+#     grade = 'A'
+# elif percentage >= 80:
+#     grade = 'B'
+# elif percentage >= 70:
+#     grade = 'C'
+# elif percentage >= 60:
+#     grade = 'D'
+# elif percentage >= 40:
+#     grade = 'E'
+# else:
+#     grade = 'F'
+
+# print(f"Percentage: {percentage}%")
+# print(f"Grade: {grade}")
+
+
+#4 question
+
+# def sum_of_odd_numbers(start, stop):
+#     a = 0
+#     for i in range(start, stop + 1):
+#         if i % 2 != 0:  
+#             a += i
+#     return a
+
+# start = 1
+# stop = 10
+# result = sum_of_odd_numbers(start, stop)
+# print("Sum of odd numbers between", start, "and", stop, "is:", result)
+
+
+##5 question
+
+# def perfect_number(num):
+#     sum_divisors = 0
+#     for i in range(1, num):
+#         if num % i == 0:
+#             sum_divisors += i
+#     return sum_divisors == num
+
+# number = int(input("Enter a number: "))
+
+# if perfect_number(number):
+#     print(f"{number}  perfect number")
+# else:
+#     print(f"{number} not perfect number")
+
+
+##6 question
+
+# def is_anagram(str1, str2):
+#     return sorted(str1) == sorted(str2)
+
+# string1 = "listen"
+# string2 = "silent"
+
+# if is_anagram(string1, string2):
+#     print("Output: True")
+# else:
+#     print("Output: False")
+
+#7 question
+
+# def gcd(a, b):
+#     while b:
+#         a, b = b, a % b
+#     return a
+
+# def lcm(a, b):
+#     return (a * b) // gcd(a, b)
+
+# number1 = 12
+# number2 = 18
+
+# result = lcm(number1, number2)
+# print(f"LCM of {number1} and {number2} is: {result}")
+
+
+##8 question
+
+
+# input_list = [1, 2, 3, 2, 4, 1, 2, 4, 5]
+# frequency_count = {}
+
+# for item in input_list:
+#     if item in frequency_count:
+#         frequency_count[item] += 1
+#     else:
+#         frequency_count[item] = 1
+
+# print("Frequency count:", frequency_count)
+
+
+# #9 question
+
+# def reverse_sentence(input_sentence):
+#     words = input_sentence.split()
+#     reversed_sentence = " ".join(reversed(words))
+#     return reversed_sentence
+
+# input_sentence = "Hello, World! Welcome to Python programming."
+# output_sentence = reverse_sentence(input_sentence)
+# print("Output after reverse =", output_sentence)
+
+##10 question
+
+def getSum(n): 
+    
+    sum = 0
+    while (n != 0): 
+       
+        sum = sum + (n % 10)
+        n = n//10
+       
+    return n
+   
+n = 9876
+print(getSum(n))
+
+
+##11 question
+
+# def reverse_number(num):
+#     revnum = 0
+#     while num > 0:
+#         digit = num % 10
+#         revnum = revnum * 10 + digit
+#         num = num // 10
+#     return revnum
+
+# num = 12345
+
+# revnum = reverse_number(num)
+
+# print("Sample Input:", num)
+# print("Sample Output:", revnum)
+
+
+
